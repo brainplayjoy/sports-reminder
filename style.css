@@ -2,12 +2,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Segoe UI, Arial, sans-serif;
 }
 
 body{
-background:#0f172a;
-color:white;
+background:#081224;
+color:#ffffff;
 }
 
 .container{
@@ -15,40 +15,65 @@ display:flex;
 min-height:100vh;
 }
 
+/* Sidebar */
+
 .sidebar{
-width:260px;
-background:#111827;
+width:250px;
+background:#0d1728;
 padding:25px;
-border-right:1px solid #1f2937;
+border-right:1px solid #1b2a41;
 }
 
 .sidebar h2{
 margin-bottom:25px;
+font-size:32px;
 }
 
 .menu-item{
-padding:12px;
-border-radius:10px;
-margin-bottom:10px;
+padding:14px;
+border-radius:12px;
+margin-bottom:12px;
 cursor:pointer;
+transition:.2s;
 }
 
 .menu-item:hover{
-background:#1e293b;
+background:#1a2740;
 }
 
 .active{
 background:#2563eb;
 }
 
+/* Main */
+
 .content{
 flex:1;
-padding:30px;
+padding:40px;
 }
 
-.content h1{
+.hero-section{
+margin-bottom:35px;
+}
+
+.hero-section h1{
+font-size:42px;
+margin-bottom:12px;
+}
+
+.hero-section p{
+max-width:750px;
+line-height:1.7;
+font-size:16px;
+color:#9fb1c9;
+}
+
+.section-title{
+font-size:26px;
 margin-bottom:20px;
 }
+
+/* Team Cards */
 
 .team-grid{
 display:grid;
@@ -58,12 +83,13 @@ margin-bottom:25px;
 }
 
 .team-card{
-background:#1e293b;
-padding:16px;
-border-radius:12px;
+background:#162338;
+padding:18px;
+border-radius:14px;
 cursor:pointer;
-transition:.2s;
+transition:.25s;
 border:2px solid transparent;
+font-weight:500;
 }
 
 .team-card:hover{
@@ -71,51 +97,69 @@ border-color:#3b82f6;
 }
 
 .team-card.selected{
-border-color:#3b82f6;
 background:#1d4ed8;
+border-color:#60a5fa;
 }
+
+/* Buttons */
 
 .primary-btn{
 background:#2563eb;
 color:white;
 border:none;
 padding:14px 24px;
-border-radius:10px;
+border-radius:12px;
+font-size:15px;
+font-weight:600;
 cursor:pointer;
-margin-bottom:25px;
+margin-bottom:30px;
+transition:.25s;
 }
+
+.primary-btn:hover{
+background:#1d4ed8;
+}
+
+/* Match Cards */
 
 .matches{
 display:flex;
 flex-direction:column;
-gap:16px;
+gap:20px;
 }
 
 .match-card{
-background:#1e293b;
-padding:20px;
-border-radius:12px;
+background:#162338;
+padding:22px;
+border-radius:14px;
+}
+
+.match-card label{
+font-size:18px;
+font-weight:600;
 }
 
 .match-info{
-margin-top:8px;
-color:#cbd5e1;
+margin-top:10px;
+color:#b8c6d9;
 }
 
 .stage{
-margin-top:12px;
+margin-top:14px;
 display:inline-block;
-background:#334155;
+background:#2c3d5c;
 padding:6px 12px;
 border-radius:20px;
 font-size:13px;
 }
 
+/* Notification */
+
 .notification-box{
 margin-top:30px;
-background:#1e293b;
-padding:20px;
-border-radius:12px;
+background:#162338;
+padding:25px;
+border-radius:14px;
 }
 
 .notification-box h3{
@@ -127,20 +171,38 @@ display:block;
 margin-bottom:10px;
 }
 
+/* Sticky Button */
+
 .sticky-btn{
 position:fixed;
-bottom:20px;
+bottom:25px;
 left:50%;
 transform:translateX(-50%);
-background:#16a34a;
+
+background:#2563eb;
 color:white;
+
 border:none;
-padding:16px 28px;
-border-radius:50px;
+padding:16px 34px;
+
 font-size:16px;
+font-weight:600;
+
+border-radius:50px;
+
 cursor:pointer;
-box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+box-shadow:0 10px 30px rgba(37,99,235,.35);
+
+transition:.25s;
 }
+
+.sticky-btn:hover{
+background:#1d4ed8;
+transform:translateX(-50%) translateY(-2px);
+}
+
+/* Mobile */
 
 @media(max-width:768px){
 
@@ -150,6 +212,14 @@ flex-direction:column;
 
 .sidebar{
 width:100%;
+}
+
+.content{
+padding:20px;
+}
+
+.hero-section h1{
+font-size:30px;
 }
 
 }
