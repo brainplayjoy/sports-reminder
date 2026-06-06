@@ -1,11 +1,11 @@
-const cards = document.querySelectorAll('.team-card');
+const cards = document.querySelectorAll(".team-card");
 
 cards.forEach(card => {
 
-card.addEventListener('click', () => {
+    card.addEventListener("click", () => {
 
-card.classList.toggle('selected');
+        card.classList.toggle("selected");
 
-});
+    });
 
 });
