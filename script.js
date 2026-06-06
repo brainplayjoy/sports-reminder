@@ -1,4 +1,6 @@
+```javascript
 const cards = document.querySelectorAll(".team-card");
+const removeAllBtn = document.getElementById("removeAllBtn");
 
 cards.forEach(card => {
 
@@ -9,3 +11,14 @@ cards.forEach(card => {
     });
 
 });
+
+removeAllBtn.addEventListener("click", () => {
+
+    cards.forEach(card => {
+
+        card.classList.remove("selected");
+
+    });
+
+});
+```
