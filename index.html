@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Reminder</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>Sports</h2>
+
+        <div class="menu-item active">⚽ FIFA World Cup</div>
+        <div class="menu-item">🏏 IPL</div>
+        <div class="menu-item">🏈 NFL</div>
+        <div class="menu-item">🏀 NBA</div>
+        <div class="menu-item">🏎 Formula 1</div>
+    </aside>
+
+    <main class="content">
+
+        <h1>Select Teams</h1>
+
+        <div class="team-grid">
+
+            <div class="team-card">🇦🇷 Argentina</div>
+            <div class="team-card">🇧🇷 Brazil</div>
+            <div class="team-card">🇩🇪 Germany</div>
+            <div class="team-card">🇵🇹 Portugal</div>
+            <div class="team-card">🇫🇷 France</div>
+            <div class="team-card">🇪🇸 Spain</div>
+
+        </div>
+
+        <button class="primary-btn">
+            Find My Matches
+        </button>
+
+        <div class="matches">
+
+            <div class="match-card">
+
+                <label>
+                    <input type="checkbox" checked>
+                    Argentina vs Mexico
+                </label>
+
+                <div class="match-info">
+                    📅 12 Jun 2026
+                </div>
+
+                <div class="match-info">
+                    🕒 12:30 AM (Your Local Time)
+                </div>
+
+                <div class="stage">
+                    Group Stage
+                </div>
+
+            </div>
+
+            <div class="match-card">
+
+                <label>
+                    <input type="checkbox" checked>
+                    Argentina vs Spain
+                </label>
+
+                <div class="match-info">
+                    📅 18 Jun 2026
+                </div>
+
+                <div class="match-info">
+                    🕒 7:30 AM (Your Local Time)
+                </div>
+
+                <div class="stage">
+                    Group Stage
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="notification-box">
+
+            <h3>Notification Preferences</h3>
+
+            <label>
+                <input type="checkbox" checked>
+                24 Hours Before
+            </label>
+
+            <label>
+                <input type="checkbox" checked>
+                1 Hour Before
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Kickoff Time
+            </label>
+
+        </div>
+
+    </main>
+
+</div>
+
+<button class="sticky-btn">
+🔔 Remind Me (5 Matches)
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
